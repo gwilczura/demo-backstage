@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-wilczura-domains
+  description: A core file linking to all domains in the system
+spec:
+  type: url
+  targets:
+    - https://github.com/gwilczura/dotnet-common/tree/main/backstage/all.yaml
+    - https://github.com/gwilczura/demo-domain-products/blob/main/backstage/all.yaml
+    - https://github.com/gwilczura/demo-bff/blob/main/backstage/all.yaml

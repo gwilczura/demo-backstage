@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-wilczura-all
+  description: A core file linking to entire system components
+spec:
+  targets:
+    - ./org.yaml
+    - ./domains.yaml
