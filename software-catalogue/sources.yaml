@@ -9,4 +9,5 @@ spec:
     - https://github.com/gwilczura/demo-backstage/blob/main/backstage/all.yaml
     - https://github.com/gwilczura/dotnet-common/blob/main/backstage/all.yaml
     - https://github.com/gwilczura/demo-domain-products/blob/main/backstage/all.yaml
+    - https://github.com/gwilczura/demo-domain-stock/blob/main/backstage/all.yaml
     - https://github.com/gwilczura/demo-bff/blob/main/backstage/all.yaml
