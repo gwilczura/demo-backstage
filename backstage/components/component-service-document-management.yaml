@@ -8,6 +8,8 @@ spec:
   lifecycle: production
   owner: sharks
   system: system-document-management
+  provides-api:
+    - api-document-management
   dependsOn:
     - resource:resource-db-document-management
     - resource:resource-vm-document-management

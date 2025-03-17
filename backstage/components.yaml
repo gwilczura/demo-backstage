@@ -5,5 +5,5 @@ metadata:
   description: A collection of all external components
 spec:
   targets:
-    - ./component/component-service-document-management.yaml
-    - ./component/component-website-document-management.yaml
+    - ./components/component-service-document-management.yaml
+    - ./components/component-website-document-management.yaml
