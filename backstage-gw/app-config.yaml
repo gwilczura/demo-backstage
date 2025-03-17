@@ -65,7 +65,7 @@ scaffolder:
 catalog:
   readonly: true
   rules:
-    - allow: [Component, System, API, Resource, Location, User, Group]
+    - allow: [Component, System, Domain, API, Resource, Location, User, Group]
   locations:
     # core config
     - type: url
