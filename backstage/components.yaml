@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-other-components
+  description: A collection of all external components
+spec:
+  targets:
+    - ./component/component-service-document-management.yaml
+    - ./component/component-website-document-management.yaml

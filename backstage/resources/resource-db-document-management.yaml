@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: resource-db-document-management
+  description: Batabase in which the DMS system is keeping it's data
+spec:
+  type: database
+  owner: sharks
+  system: system-document-management

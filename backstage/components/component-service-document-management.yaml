@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-service-document-management
+  description: DMS Application - backend service - to manage documents
+spec:
+  type: service
+  lifecycle: production
+  owner: sharks
+  system: system-document-management
+  dependsOn:
+    - resource:resource-db-document-management
+    - resource:resource-vm-document-management

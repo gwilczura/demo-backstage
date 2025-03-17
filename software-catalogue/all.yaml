@@ -6,4 +6,4 @@ metadata:
 spec:
   targets:
     - ./org.yaml
-    - ./domains.yaml
+    - ./sources.yaml

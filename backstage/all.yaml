@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-other-all
+  description: A core file linking to external components
+spec:
+  targets:
+    - ./apis.yaml
+    - ./systems.yaml
+    - ./components.yaml
+    - ./resources.yaml
+    # - ./domains.yaml

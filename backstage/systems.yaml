@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-other-systems
+  description: A collection of all external systems
+spec:
+  targets:
+    - ./systems/system-document-management.yaml

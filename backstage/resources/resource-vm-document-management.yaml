@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: resource-vm-document-management
+  description: Virtual Machine on which the DMS system is hosted
+spec:
+  type: virtual-machine
+  owner: sharks
+  system: system-document-management

@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-other-resources
+  description: A collection of all resources used for external solutions
+spec:
+  targets:
+    - ./resources/resource-vm-document-management.yaml
+    - ./resources/resource-db-document-management.yaml

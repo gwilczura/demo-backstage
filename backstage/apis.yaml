@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: loc-other-apis
+  description: A collection of all external apis
+spec:
+  targets:
+    - ./apis/api-document-management.yaml

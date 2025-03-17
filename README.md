@@ -6,7 +6,34 @@ This demo is using a static file configuration distributed across multiple repos
 
 [Core .Net Libraries](https://github.com/gwilczura/dotnet-common)
 
+[Products Domain](https://github.com/gwilczura/demo-domain-products)
+
+[Backend For Frontend](https://github.com/gwilczura/demo-bff)
+
+Those repositories conain code for system presented below:
+
+![System Overview](/resources/system.png)
+
+## Backstage Configuration
+
+Backstage out of the box gives us a model to represent our systems:
+
+[Backstage System Model](https://backstage.io/docs/features/software-catalog/system-model/)
+
+This demo is based on configuration convention presented below.
+
+![Backstage Configuration](/resources/backstage-config.png)
+
+All repositories are public so not additional authentication-related configuration is needed.
+
+Each repository has it's own `backstage` folder with `all.yaml` that points to other `location` files.
+
 # How to Run
+
+## backstage-gw
+There is an already set-up backstage application that you can use.
+
+It's named `backstage-gw`.
 
 ```
 cd backstage-gw
@@ -23,7 +50,7 @@ and then you can do
 yarn dev
 ```
 
-# How To Install new Backstage Instance
+## How To Install new Backstage Instance
 
 in main folder
 
@@ -38,12 +65,16 @@ Set-ExecutionPolicy -Scope CurrentUser
 npx @backstage/create-app@latest
 ```
 
-name your app for example backstage-demo
+name your app for example `backstage-demo`
 
 new folder will be created named `backstage-demo`
 
 
-# Accessing repos in Azure DevOps
+## Accessing private repos in Azure DevOps
+
+If you store your code in private repository you might need to set-up access to it.
+
+Below is example for AzureDevops.
 
 Create a PAT to your repository - in my case AzureDevops Repos
 
@@ -59,6 +90,8 @@ inside add
 ```
 AZDO_PAT: blablabla-your-pat-here-blablabla
 ```
+
+Note: you can add any environmental variable in this file.
 
 In backstage app `app-config.yml` add section
 

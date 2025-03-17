@@ -1,3 +1,6 @@
+#custom
+local_info/
+
 # Logs
 logs
 *.log
